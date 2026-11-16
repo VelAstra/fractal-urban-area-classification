@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+sample_data/*.png
+!sample_data/tile_dense_urban.png
+!sample_data/tile_suburban.png
+!sample_data/tile_rural.png
