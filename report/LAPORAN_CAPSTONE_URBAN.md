@@ -32,11 +32,9 @@ Kota modern berkembang secara non-linier dan memiliki kemiripan mandiri struktur
 2. Bagaimana menghitung dimensi fraktal box-counting dan radial sebagai representasi ekspansi fisik kota?
 3. Bagaimana mengklasifikasikan wilayah ke dalam zona perkotaan padat, sub-urban, dan pedesaan?
 
-### 1.3 Pembagian Tugas Tim (4 Mahasiswa)
-1. **Mahasiswa 1**: *Satellite Tile Ingestion* & Segmentasi Jejak Bangunan.
-2. **Mahasiswa 2**: Ekstraksi Dimensi Fraktal Box-Counting & Dimensi Radial.
-3. **Mahasiswa 3**: Modul Klasifikasi Morfologi Spasial & Pemetaan Zonasi.
-4. **Mahasiswa 4**: Antarmuka Grafis (Tkinter GUI), Visualisasi Peta Kepadatan, & Evaluasi Metrik.
+### 1.3 Pembagian Tugas Tim Capstone (2 Mahasiswa)
+1. **Aji Kusuma Putra** (NIM: 22/503701/PA/21657): Ingestion ubin satelit, ekstraksi jejak kontur buatan manusia, mesin analisis fraktal box-counting, dan analisis dimensi radial. (`sample_data/generate_satellite_tiles.py`, `core/fractal_analyzer.py`).
+2. **Rayhan Haldi Hermawan** (NIM: 24/545406/PA/23176): Klasifikasi zonasi morfologi perkotaan (Dense Urban, Suburban, Rural), pemetaan ambang densitas, Desktop GUI Tkinter, integrasi CLI, visualisasi peta panas kepadatan kota, dan evaluasi metrik. (`core/classifier.py`, `core/evaluation.py`, `gui/app.py`, `cli.py`).
 
 ---
 

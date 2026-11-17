@@ -179,8 +179,8 @@ def build_pdf_report():
         styles["AcademicBody"]
     ))
 
-    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (4 Mahasiswa)", styles["SectionHeading"]))
-    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (4 Mahasiswa)", styles["TableCaption"]))
+    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (2 Mahasiswa)", styles["SectionHeading"]))
+    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (2 Mahasiswa)", styles["TableCaption"]))
 
     t3_data = [
         [
@@ -191,30 +191,18 @@ def build_pdf_report():
         ],
         [
             Paragraph("1", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 1", styles["TableCellLeft"]),
-            Paragraph("Ingestion ubin satelit, ekstraksi jejak kontur buatan manusia.", styles["TableCellLeft"]),
-            Paragraph("sample_data/generate_satellite_tiles.py", styles["TableCellCode"]),
+            Paragraph("Aji Kusuma Putra<br/><font size=7.5 color='#4A5568'>NIM: 22/503701/PA/21657</font>", styles["TableCellLeft"]),
+            Paragraph("Ingestion ubin satelit, ekstraksi jejak kontur buatan manusia, mesin analisis fraktal box-counting, dan analisis dimensi radial.", styles["TableCellLeft"]),
+            Paragraph("sample_data/generate_satellite_tiles.py<br/>core/fractal_analyzer.py", styles["TableCellCode"]),
         ],
         [
             Paragraph("2", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 2", styles["TableCellLeft"]),
-            Paragraph("Mesin analisis fraktal box-counting dan analisis dimensi radial.", styles["TableCellLeft"]),
-            Paragraph("core/fractal_analyzer.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("3", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 3", styles["TableCellLeft"]),
-            Paragraph("Klasifikasi zonasi morfologi perkotaan dan pemetaan ambang densitas.", styles["TableCellLeft"]),
-            Paragraph("core/classifier.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("4", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 4", styles["TableCellLeft"]),
-            Paragraph("Desktop GUI Tkinter, integrasi CLI, visualisasi peta panas kepadatan kota.", styles["TableCellLeft"]),
-            Paragraph("core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
+            Paragraph("Rayhan Haldi Hermawan<br/><font size=7.5 color='#4A5568'>NIM: 24/545406/PA/23176</font>", styles["TableCellLeft"]),
+            Paragraph("Klasifikasi zonasi morfologi perkotaan (Dense Urban, Suburban, Rural), pemetaan ambang densitas, Desktop GUI Tkinter, integrasi CLI, visualisasi peta panas kepadatan kota, dan evaluasi metrik.", styles["TableCellLeft"]),
+            Paragraph("core/classifier.py<br/>core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
         ],
     ]
-    t3_table = Table(t3_data, colWidths=[24, 76, 196, 100])
+    t3_table = Table(t3_data, colWidths=[24, 106, 166, 100])
     t3_table.setStyle(get_booktabs_style(len(t3_data)))
     story.append(t3_table)
     story.append(Spacer(1, 0.4 * cm))
